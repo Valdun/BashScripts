@@ -16,7 +16,7 @@ for type in cert chain fullchain privkey; do
     if [ -f "$f" ]; then
       new_file="${f%[0-9].pem}3.pem"  # Remplace le dernier chiffre par 3
       echo "Renommage de $f en $new_file"
-      mv "$f" "$new_file"  # Renomme le fichier
+      mv "$f" "$new_file"  # Renomme le fichier.
     fi
   done
 done
